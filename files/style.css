@@ -136,7 +136,7 @@ body {
 
 .home-sci a:hover {
     background: #0ef;
-    color: #081b29;
+    color: #000;
     box-shadow: 0 0 20px #0ef;
 }
 
@@ -169,7 +169,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    opacity: 1;
     position: absolute;
     opacity: 0;
     animation: slideUP 1s ease forwards;
@@ -769,7 +768,6 @@ body {
     color: #0ef;
     text-decoration: none;
     margin: 0px 15px 0px 0;
-    transition: .5s ease;
     opacity: 1;
 }
 
@@ -932,6 +930,7 @@ body {
         content: "\a";
         white-space: pre;
     }
+    
 }
 
 @media (max-width: 700px) and (min-width: 400px) {
