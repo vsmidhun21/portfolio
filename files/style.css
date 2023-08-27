@@ -9,6 +9,7 @@
 body {
     color: #ededed;
     background-color: black;
+    min-width: 450px;
 }
 
 /*navbar*/
@@ -24,6 +25,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    overflow: hidden;
 }
 
 .logo {
@@ -282,6 +284,12 @@ body {
     padding: 10px;
     margin-left: 100px;
 }
+.container2 {
+    width: 600px;
+    max-height: 500px;
+    padding: 10px;
+    margin-left: 100px;
+}
 
 .heading1 {
     text-align: center;
@@ -469,8 +477,9 @@ body {
 
 .radial-bar .percentage {
     position: absolute;
+    align-items: center;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     font-size: 17px;
     font-weight: 500;
@@ -520,7 +529,6 @@ body {
 
 .row {
     position: relative;
-    overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
     padding: 0px;
@@ -685,7 +693,7 @@ body {
 
 .contacts {
     display: grid;
-    grid-template-columns: repeat (2, 1fr);
+    /*grid-template-columns: repeat (2, 1fr);*/
     align-items: center;
     gap: 3rem;
     padding: 40px;
@@ -769,53 +777,7 @@ body {
     color: #000;
     box-shadow: 0 0 20px #0ef;
 }
-/*
-.form form {
-    position: relative;
-}
 
-.form form input,
-form textarea {
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 18px;
-    background: #555557;
-    color: #000;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5em;
-}
-
-.form textarea {
-    resize: none;
-    height: 220px;
-}
-
-.form form .send {
-    display: inline-block;
-    padding: 14px 60px;
-    background: #0ef;
-    border-radius: 40px;
-    font-size: 20px;
-    color: #000;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-bottom: 10px;
-    opacity: 1;
-    box-shadow: 0 0 5px #0ef,
-        0 0 25px #0ef;
-}
-
-.form form .send:hover {
-    cursor: pointer;
-    box-shadow: 0 0 5px cyan,
-        0 0 10px cyan, 0 0 15px cyan,
-        0 0 20px cyan, 0 0 100px cyan;
-}
-*/
 .last-text p{
     width: 100%;
     text-align: center;
@@ -825,20 +787,26 @@ form textarea {
     margin-top: 70px;
 }
 .top{
-    right: 1%;
     position: fixed;
     bottom: 2.1rem;
-    right: 2,1rem;
+    left: 1rem;
+    display: flex;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .top i{
-    color: #000;
+    color: white;
     background: #0ef;
     font-size: 20px;
     padding: 10px;
     border-radius: 0.5rem;
-   /* box-shadow: 0 0 5px #0ef,
-        0 0 25px #0ef;*/
 }
 
 .top i:hover {
@@ -939,18 +907,68 @@ form textarea {
     }
 }
 
-@media screen and (max-width: 700px) {
-    
-    /*navbar*/
+@media (max-width: 900px) and (min-width: 700px) {
+    .header{
+        display:block;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
     .logo {
-        font-size: 20px;
+        position: relative;
+        font-size: 30px;
         font-weight: 500;
-        
+        text-align: center;
+    }
+    .logo::after{
+        content: "\a";
+        white-space: pre;
     }
     .navbar a {
-        font-size: 23px;
+        font-size: 25px;
         font-weight: 200;
+        margin-left: 0px;
+        padding: 10px;
     }
+    .navbar a::after{
+        content: "\a";
+        white-space: pre;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    /*navbar*/
+    .header{
+        display:block;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+    .logo {
+        position: relative;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .logo::after{
+        content: "\a";
+        white-space: pre;
+    }
+    .navbar a {
+        font-size: 15px;
+        font-weight: 200;
+        margin-left: 0px;
+        padding: 10px;
+    }
+    .navbar a::after{
+        content: "\a";
+        white-space: pre;
+    }
+
+    
+
+    
     
     /*home*/
     .home{
@@ -1014,6 +1032,12 @@ form textarea {
         padding: 20px;
         margin-left: 50px;
     }
+    .container2 {
+        width: 600px;
+        max-height: 500px;
+        padding: 10px;
+        margin-left: 0px;
+    }
 
     /*project*/
     .main-text {
@@ -1037,6 +1061,16 @@ form textarea {
         font-size: 50px;
     }
     
-    
+    .top{
+        position: fixed;
+        bottom: 2rem;
+        left: 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        opacity: 0;
+        transition: all .4s;
+    }
     
 }
