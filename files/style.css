@@ -8,7 +8,7 @@
 }
 
 body {
-    color: #ededed;
+    color: white;
     background-color: black;
 }
 
@@ -152,7 +152,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
-    animation: slideUP .5s ease forwards;
+    animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
 
@@ -216,7 +216,8 @@ body {
     max-width: 492px;
     max-height: 492px;
     border-radius: 90px;
-    box-shadow: 0 0 5pc cyan, 0 0 5px cyan, 0 0 10px cyan;
+    /*box-shadow: 0 0 5pc cyan, 0 0 5px cyan, 0 0 10px cyan;*/
+    border: #0ef 5px solid;
 }
 
 .about-text {
@@ -495,7 +496,7 @@ body {
     width: 100%;
     position: absolute;
     text-align: center;
-    left: 50%;
+    left: 15%;
     bottom: 5px;
     transform: translateX(-50px);
     font-size: 17px;
@@ -641,7 +642,8 @@ body {
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
-    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    /*box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;*/
+    border: #0ef 5px solid;
 }
 
 .container {
@@ -711,7 +713,8 @@ body {
 
 .contact-text h2 {
     font-size: 60px;
-    line-height: 1;
+    line-height: normal;
+    text-align: center;
 
 }
 
@@ -752,10 +755,6 @@ body {
     padding: 10px;
 }
 
-.contact-list li a:hover {
-    transform: scale(1.01) translateY(-5px);
-    color: #0ef;
-}
 
 .contact-icons i {
     display: inline-flex;
@@ -771,9 +770,7 @@ body {
     text-decoration: none;
     margin: 0px 15px 0px 0;
     transition: .5s ease;
-    opacity: 0;
-    animation: slideUP 1s ease forwards;
-    animation-delay: calc(.2s* var(--1));
+    opacity: 1;
 }
 
 .contact-icons i:hover {
@@ -806,7 +803,7 @@ body {
 }
 
 .top i{
-    color: white;
+    color: black;
     background: #0ef;
     font-size: 20px;
     padding: 10px;
@@ -938,7 +935,10 @@ body {
 }
 
 @media (max-width: 700px) and (min-width: 400px) {
-    
+    *{
+        overflow-x: hidden;
+        overflow-y: inherit;
+    }
     /*navbar*/
     .header{
         display:block;
@@ -1046,16 +1046,24 @@ body {
         font-size: 50px;
         padding-bottom: 15px;
     }
-
+    .layer p {
+        line-height: normal;
+    }
     /*service*/
     .sub-title {
         font-size: 50px;
         padding-bottom: 50px;
     }
-
+    .prj-list div{
+        padding: 20px;
+    }
     /*contact*/
     .contacts h2{
         font-size: 50px;
+    }
+    .contact-list i{
+        font-size: 15px;
+        padding: 5px 5px 0 0;
     }
     
     .top{
@@ -1073,8 +1081,8 @@ body {
 }
 
 @media (max-width: 400px) {
-    body{
-        max-width: 400px;
+    *{
+        overflow-x: hidden;
     }
     .header{
         display:block;
@@ -1172,6 +1180,9 @@ body {
         padding: 10px;
         margin-left: 0px;
     }
+    .radial-bar .text{
+        left: 25%;
+    }
 
     /*project*/
     .main-text {
@@ -1182,6 +1193,9 @@ body {
     .main-text h2 {
         font-size: 50px;
         padding-bottom: 15px;
+    }
+    .layer p {
+        line-height: normal;
     }
 
     /*service*/
@@ -1194,9 +1208,9 @@ body {
     .contacts h2{
         font-size: 50px;
     }
-    .contact-list{
-        font-size: 12px;
-        letter-spacing: normal;
+    .contact-list i{
+        font-size: 13px;
+        padding: 5px 5px 0 0;
     }
     
     .top{
@@ -1209,5 +1223,8 @@ body {
         text-decoration: none;
         opacity: 0;
         transition: all .4s;
+    }
+    .top i{
+        color: #000;
     }
 }
