@@ -164,6 +164,7 @@ body {
     left: 55%;
     bottom: 15%;
     margin-right: 5%;
+    padding: 0;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -259,12 +260,15 @@ body {
 
 
 /* Skills */
-
+#Skills{
+    background-color: #000;
+}
 .subtitle {
     text-align: center;
     font-size: 60px;
     padding-bottom: 10px;
     padding-top: 70px;
+    
 }
 
 .subtitle span {
@@ -500,7 +504,9 @@ body {
 }
 
 /*projects*/
-
+#Projects{
+    background-color: #000;
+}
 .main-text {
     padding-top: 50px;
     margin-top: 10px;
@@ -602,14 +608,11 @@ body {
     opacity: 1;
 }
 
-/* Service
+/* Service*/
 
-#Project {
-    color: aliceblue;
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 4rem;
-}*/
+#Services{
+    background-color: #000;
+}
 
 .sub-title {
     text-align: center;
@@ -698,6 +701,7 @@ body {
     padding: 40px;
     padding-top: 70px;
     justify-content: center;
+    background-color: #000;
 }
 
 .contact-text {
@@ -781,7 +785,7 @@ body {
     width: 100%;
     text-align: center;
     padding: 25px;
-    background: rgb(7,85,91);
+    background: black;
     font-weight: 300;
     margin-top: 70px;
 }
@@ -909,9 +913,6 @@ body {
 @media (max-width: 900px) and (min-width: 700px) {
     .header{
         display:block;
-        text-align: center;
-        align-items: center;
-        align-content: center;
     }
     .logo {
         position: relative;
@@ -927,7 +928,7 @@ body {
         font-size: 25px;
         font-weight: 200;
         margin-left: 0px;
-        padding: 10px;
+        padding: 10px 10px 0 0;
     }
     .navbar a::after{
         content: "\a";
@@ -935,14 +936,12 @@ body {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) and (min-width: 400px) {
     
     /*navbar*/
     .header{
         display:block;
-        align-items: center;
-        text-align: center;
-        align-content: center;
+        
     }
     .logo {
         position: relative;
@@ -958,17 +957,13 @@ body {
         font-size: 15px;
         font-weight: 200;
         margin-left: 0px;
-        padding: 10px;
+        padding: 10px 10px 0 0;
     }
     .navbar a::after{
         content: "\a";
         white-space: pre;
     }
 
-    
-
-    
-    
     /*home*/
     .home{
         align-items: normal;
@@ -995,11 +990,13 @@ body {
         font-weight: 200;
     }
     .img{
-        min-width: 400px;
+        max-width: 400px;
         position: relative;
-        left: -9%;
+        left: -10%;
         top: 2%;
         padding-bottom: 30px;
+        padding-left: 0;
+        margin-left: 0;
     }
     
     /*about*/
@@ -1072,4 +1069,139 @@ body {
         transition: all .4s;
     }
     
+}
+
+@media (max-width: 400px) {
+    .header{
+        display:block;
+    }
+    .logo {
+        position: relative;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .logo::after{
+        content: "\a";
+        white-space: pre;
+    }
+    .navbar a {
+        font-size: 15px;
+        font-weight: 200;
+        margin-left: 0px;
+        padding: 10px 5px 0 0;
+    }
+    .navbar a::after{
+        content: "\a";
+        white-space: pre;
+    }
+
+    /*home*/
+    .home{
+        align-items: normal;
+        padding-top: 40%;
+        padding-bottom: 0;
+    }
+    .home-content h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .home-content h3 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+    .home-content h4 {
+        font-size: 15px;
+        font-weight: 200;
+    }
+    
+    .home-content h4 span {
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .img{
+        max-width: 400px;
+        position: relative;
+        left: -10%;
+        top: 2%;
+        padding-bottom: 30px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    
+    /*about*/
+    .about{
+        padding-bottom: 20px;
+        min-height: auto;
+    }
+    .about-text h2 {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    
+    .about-text p {
+        font-size: 15px;
+        line-height: normal;
+        letter-spacing: 0px;
+        margin-bottom: 4rem;
+        text-align: left;
+    }
+
+    /*skills*/
+    .subtitle{
+        font-size: 50px;
+        text-align: center;
+    }
+    .container1 {
+        width: 600px;
+        max-height: 500px;
+        padding: 20px;
+        margin-left: 50px;
+    }
+    .container2 {
+        width: 600px;
+        max-height: 500px;
+        padding: 10px;
+        margin-left: 0px;
+    }
+
+    /*project*/
+    .main-text {
+        padding-top: 20px;
+        margin-top: 10px;
+        padding-bottom: 50px;
+    }
+    .main-text h2 {
+        font-size: 50px;
+        padding-bottom: 15px;
+    }
+
+    /*service*/
+    .sub-title {
+        font-size: 50px;
+        padding-bottom: 50px;
+    }
+
+    /*contact*/
+    .contacts h2{
+        font-size: 50px;
+    }
+    .contact-list{
+        font-size: 12px;
+        letter-spacing: normal;
+    }
+    
+    .top{
+        position: fixed;
+        bottom: 2rem;
+        left: 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        opacity: 0;
+        transition: all .4s;
+    }
 }
