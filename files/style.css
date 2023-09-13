@@ -689,7 +689,7 @@ body {
 }
 
 .prj-list div:hover {
-    transform: translateY(-10px);
+    transform: translateY(-2px);
 }
 
 
@@ -1034,6 +1034,21 @@ body {
         padding: 10px;
         margin-left: 0px;
     }
+    .bar .info .addhtml::before{
+        content: "90%";
+    }
+    .bar .info .addcss::before{
+        content: "80%";
+    }
+    .bar .info .addpy::before{
+        content: "75%";
+    }
+    .bar .info .addjava::before{
+        content: "50%";
+    }
+    .bar .info .addc::before{
+        content: "50%";
+    }
 
     /*project*/
     .main-text {
@@ -1181,6 +1196,21 @@ body {
     }
     .radial-bar .text{
         left: 25%;
+    }
+    .bar .info .addhtml::before{
+        content: "90%";
+    }
+    .bar .info .addcss::before{
+        content: "80%";
+    }
+    .bar .info .addpy::before{
+        content: "75%";
+    }
+    .bar .info .addjava::before{
+        content: "50%";
+    }
+    .bar .info .addc::before{
+        content: "50%";
     }
 
     /*project*/
