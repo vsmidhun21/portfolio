@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm MIDHUN V S</h1>
 <h3 align="center">A passionate Web developer from India</h3>
-
+<img align="right" alt="Coding" width="400" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Frudrabarad%2FGifs&psig=AOvVaw1CBPeoouEvYkJoHJZVZjB3&ust=1696870978765000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDzo5r35oEDFQAAAAAdAAAAABAD">
 - 🔭 I’m currently pursuing **final year engineering**
 
 - 🌱 I’m currently learning **Full Stack Development**
