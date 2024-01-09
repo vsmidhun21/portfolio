@@ -998,7 +998,9 @@ body {
         padding-left: 0;
         margin-left: 0;
     }
-    
+    .btn-box:hover {
+        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
+    }
     /*about*/
     .about{
         padding-bottom: 20px;
@@ -1015,6 +1017,9 @@ body {
         letter-spacing: 1px;
         margin-bottom: 4rem;
         text-align: left;
+    }
+    .abtbtn-box:hover {
+        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
     }
 
     /*skills*/
@@ -1148,6 +1153,9 @@ body {
         font-size: 15px;
         font-weight: 200;
     }
+    .btn-box:hover {
+        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
+    }
     .img{
         max-width: 300px;
         position: relative;
@@ -1175,6 +1183,9 @@ body {
         letter-spacing: 0px;
         margin-bottom: 4rem;
         text-align: left;
+    }
+    .abtbtn-box:hover {
+        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
     }
 
     /*skills*/
